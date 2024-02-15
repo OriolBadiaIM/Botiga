@@ -7,14 +7,16 @@
             //Botiga//
             string[] productesBotiga = new string[9];
             double[] preus = new double[9];
+            int nElemBotiga;
 
             //Cistella//
             string[] productesCistella = new string[9];
             int[] quantitat = new int[9];
+            int nElemCistella;
             double diners;
 
 
-            Escollir();
+            EscollirRol();
             MostrarBotiga();
         }
 
@@ -105,7 +107,7 @@
 
         //────────────────────────────//
 
-        static void Escollir()
+        static void EscollirRol()
         {
             CenterText("Sóc un client");
             CenterText(" Sóc el venedor");
