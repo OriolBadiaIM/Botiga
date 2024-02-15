@@ -17,6 +17,7 @@
 
 
             EscollirRol();
+            EscollirOpcioVenedor();
             MostrarBotiga();
         }
 
@@ -31,6 +32,82 @@
             int leftMargin = (screenWidth - stringWidth) / 2;
             Console.SetCursorPosition(leftMargin, Console.CursorTop);
             Console.WriteLine(text);
+        }
+        //────────────────────────────//
+
+        //──OpcionsRol──//
+        static void EscollirRol()
+        {
+            CenterText("Sóc un Client");
+            CenterText("Sóc el Venedor");
+            OpcioRol();
+        }
+
+        static void OpcioRol()
+        {
+            string OpcioRol;
+            Console.WriteLine("Qui ets?: ");
+            OpcioRol = Convert.ToString(Console.ReadLine());
+
+            switch (OpcioRol)
+            {
+                case "Client":
+                    Console.Clear();
+                    MostrarBotiga();
+                    break;
+
+                case "Venedor":
+                    Console.Clear();
+                    EscollirOpcioVenedor();
+                    break;
+            }
+        }
+        //────────────────────────────//
+
+        //──OpcionsVenedor//
+        static void EscollirOpcioVenedor()
+        {
+            CenterText("Ampliar Botiga");
+            CenterText("Modificar Preu");
+            CenterText("Modificar Producte");
+            CenterText("Ordenar Productes");
+            CenterText("Ordenar Preus");
+            OpcioVenedor();
+        }
+
+        static void OpcioVenedor()
+        {
+            string OpcioAccioVenedor;
+            Console.WriteLine("Hola Venedor! Que vols fer? ");
+            OpcioAccioVenedor = Convert.ToString(Console.ReadLine());
+
+            switch (OpcioAccioVenedor)
+            {
+               case "Ampliar Botiga":
+                    Console.Clear();
+                    //AmpliarBotiga();
+                    break;
+
+                case "Modificar Preu":
+                    Console.Clear();
+                    //ModificarPreu();
+                    break;
+
+                case "Modificar Producte":
+                    Console.Clear();
+                    //ModificarProducte();
+                    break;
+
+                case "Ordenar Producte":
+                    Console.Clear();
+                    //OrdenarProducte();
+                    break;
+
+                case "Ordenar Preus":
+                    Console.Clear();
+                    //OrdenarPreus();
+                    break;
+            }
         }
         //────────────────────────────//
 
@@ -58,47 +135,47 @@
         static void OpcioMenu()
         {
             string OpcionsProductes;
-            Console.WriteLine("Escriu el que vols afegir a la cistella: ");
+            Console.WriteLine("Benvolgut Client! Escriu el que vols afegir a la cistella: ");
             OpcionsProductes = Convert.ToString(Console.ReadLine());
 
             switch (OpcionsProductes)
             {
                 case "Tomata":
                     Console.Clear();
-                    MostrarBotiga();
+                    AfegirProducte();
                     break;
 
                 case "Formatge":
                     Console.Clear();
-                    MostrarBotiga();
+                    //AfegirProducte();
                     break;
                 case "Pebre":
                     Console.Clear();
-                    MostrarBotiga();
+                    //AfegirProducte();
                     break;
                 case "Espaguetis":
                     Console.Clear();
-                    MostrarBotiga();
+                    //AfegirProducte();
                     break;
                 case "Enciam":
                     Console.Clear();
-                    MostrarBotiga();
+                    //AfegirProducte();
                     break;
                 case "Croissant":
                     Console.Clear();
-                    MostrarBotiga();
+                    //AfegirProducte();
                     break;
                 case "Pizza pernil":
                     Console.Clear();
-                    MostrarBotiga();
+                    //AfegirProducte();
                     break;
                 case "Llenties":
                     Console.Clear();
-                    MostrarBotiga();
+                    //AfegirProducte();
                     break;
                 case "Fuet":
                     Console.Clear();
-                    MostrarBotiga();
+                    //AfegirProducte();
                     break;
             }
 
@@ -107,116 +184,108 @@
 
         //────────────────────────────//
 
-        static void EscollirRol()
+        
+
+        //──AfegirProducte──//
+        static void AfegirProducte(string producte, double preu)
         {
-            CenterText("Sóc un client");
-            CenterText(" Sóc el venedor");
-            OpcioRol();
+            Console.Clear();
+            CenterText("╔═════════════════════════════════╗");
+            CenterText("║        PRODUCTES BOTIGA         ║");
+            CenterText("║─────────────────────────────────║");
+            CenterText("║ 1 - Tomata............... 0.50e ║");
+            CenterText("║ 2 - Formatge............. 1.20e ║");
+            CenterText("║ 3 - Pebre................ 3.70e ║");
+            CenterText("║ 4 - Espaguetis........... 5.00e ║");
+            CenterText("║ 5 - Enciam............... 0.20e ║");
+            CenterText("║ 6 - Croissant............ 2.00e ║");
+            CenterText("║ 7 - Pizza pernil......... 4.50e ║");
+            CenterText("║ 8 - Llenties............. 6.45e ║");
+            CenterText("║ 9 - Fuet................. 9.80e ║");
+            CenterText("╚═════════════════════════════════╝");
+
+            Console.WriteLine("Escull el producte que vols:");
+            producte = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Escull el preu:");
+            preu = Convert.ToDouble(Console.ReadLine());
         }
-        //──MenúOpcionsRol──//
+        //────────────────────────────//
 
-        static void OpcioRol()
+        //──AmpliarBotiga──//
+        static void AmpliarBotiga(int num)
         {
-            string OpcioRol;
-            Console.WriteLine("Qui ets?: ");
-            OpcioRol = Convert.ToString(Console.ReadLine());
-
-            switch (OpcioRol)
-            {
-                case "Client":
-                    MostrarBotiga();
-                    Console.Clear();
-                    break;
-
-                case "Venedor":
-                    Console.Clear();
-                    MostrarBotiga();
-                    break;
-            }
-            //────────────────────────────//
-          
-
-            //──AfegirProducte──//
-            static void AfegirProductes(string productes, double preu)
-            {
-
-            }
-            //────────────────────────────//
-
-            //──AmpliarBotiga──//
-            static void AmpliarBotiga(int num)
-            {
-
-            }
-            //────────────────────────────//
-
-            //──ModificarPreu──//
-            static void ModificarPreu(string producte, double preu)
-            {
-
-            }
-            //────────────────────────────//
-
-            //──ModificarProducte──//
-            static void ModificarProducte(string producteAntic, string producteNou)
-            {
-
-            }
-            //────────────────────────────//
-
-            //──OrdenarProducte──//
-            static void OrdenarProducte()
-            {
-
-            }
-            //────────────────────────────//
-
-            //──OrdenarPreus──//
-            static void OrdenarPreus()
-            {
-
-            }
-            //────────────────────────────//
-
-            //──BotigaToString──//
-            static void BotigaToString()
-            {
-
-            }
-            //────────────────────────────//
-
-
-
-            //──METODES CISTELLA──//
-
-            //──ComprarProducte──//
-            static void ComprarProducte(string producte, int quantitat)
-            {
-
-            }
-            //───────────────────//
-
-            //──OrdenarCistella──//
-            static void OrdenarCistella(string producte, int quantitat)
-            {
-
-            }
-            //───────────────────//
-
-            //──MostrarCistella──//
-            static void MostrarCistella()
-            {
-
-            }
-            //───────────────────//
-
-            //──CistellaToString──//
-            static void CistellaToString()
-            {
-
-            }
-            //───────────────────//
 
         }
+        //────────────────────────────//
+
+        //──ModificarPreu──//
+        static void ModificarPreu(string producte, double preu)
+        {
+
+        }
+        //────────────────────────────//
+
+        //──ModificarProducte──//
+        static void ModificarProducte(string producteAntic, string producteNou)
+        {
+
+        }
+        //────────────────────────────//
+
+        //──OrdenarProducte──//
+        static void OrdenarProducte()
+        {
+
+        }
+        //────────────────────────────//
+
+        //──OrdenarPreus──//
+        static void OrdenarPreus()
+        {
+
+        }
+        //────────────────────────────//
+
+        //──BotigaToString──//
+        static void BotigaToString()
+        {
+
+        }
+        //────────────────────────────//
+
+
+
+
+
+        //──METODES CISTELLA──//
+
+        //──ComprarProducte──//
+        static void ComprarProducte(string producte, int quantitat)
+        {
+
+        }
+        //───────────────────//
+
+        //──OrdenarCistella──//
+        static void OrdenarCistella(string producte, int quantitat)
+        {
+
+        }
+        //───────────────────//
+
+        //──MostrarCistella──//
+        static void MostrarCistella()
+        {
+
+        }
+        //───────────────────//
+
+        //──CistellaToString──//
+        static void CistellaToString()
+        {
+
+        }
+        //───────────────────//
     }
 }
