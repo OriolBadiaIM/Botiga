@@ -1,0 +1,15 @@
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\BotigaExercici.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\BotigaExercici.AssemblyInfoInputs.cache
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\BotigaExercici.AssemblyInfo.cs
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\BotigaExercici.csproj.CoreCompileInputs.cache
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\BotigaExercici.sourcelink.json
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\bin\Debug\net8.0\BotigaExercici.exe
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\bin\Debug\net8.0\BotigaExercici.deps.json
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\bin\Debug\net8.0\BotigaExercici.runtimeconfig.json
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\bin\Debug\net8.0\BotigaExercici.dll
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\bin\Debug\net8.0\BotigaExercici.pdb
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\BotigaExercici.dll
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\refint\BotigaExercici.dll
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\BotigaExercici.pdb
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\BotigaExercici.genruntimeconfig.cache
+C:\Users\Oriol Badia\source\repos\Botiga\BotigaExercici\obj\Debug\net8.0\ref\BotigaExercici.dll
