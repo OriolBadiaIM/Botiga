@@ -78,7 +78,7 @@
         static void OpcioVenedor()
         {
             string OpcioAccioVenedor;
-            Console.WriteLine("Hola Venedor! Que vols fer? ");
+            Console.WriteLine("Hola Venedor! Que vols fer: ");
             OpcioAccioVenedor = Convert.ToString(Console.ReadLine());
 
             switch (OpcioAccioVenedor)
